@@ -85,11 +85,11 @@ for k, fname in enumerate(ids):
             child_xmin.text = str(int(value_xmin)) #xmin
 
             child_ymin = SubElement(child_bndbox, 'ymin')
-            value_ymin = float(x[2])*img.shape[0]
+            value_ymin = float(x[3])*img.shape[0]
             child_ymin.text = str(int(value_ymin)) #ymin
 
             child_xmax = SubElement(child_bndbox, 'xmax')
-            value_xmax = float(x[3])*img.shape[1]
+            value_xmax = float(x[2])*img.shape[1]
             child_xmax.text = str(int(value_xmax)) #xmax
 
             child_ymax = SubElement(child_bndbox, 'ymax')
